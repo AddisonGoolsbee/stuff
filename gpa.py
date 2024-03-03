@@ -1,5 +1,9 @@
+import os
+from ast import literal_eval
+
 def main():
-    grades = [4,4,4,4,4,3.7,4,3.7,4,4,3.3,3.3,3.7,4,4,3.7,3.7,4,3.7,4,4,4,4]
+    grades_array = os.getenv('GRADES')
+    grades = literal_eval(grades_array)
     total = 0
 
     for grade in grades:
