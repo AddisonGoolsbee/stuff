@@ -1,3 +1,3 @@
 # Stuff
 
-This repository is just a bunch of random tiny projects that don't deserve their own repository.
+This repository is just a bunch of random tiny projects or doodles that don't deserve their own repository.
