@@ -1,5 +1,4 @@
-import numpy as np
-
+# Multipy some hard-coded matrices. Used for a problem set in the class 3D Spacial Modeling and Computing
 import numpy as np
 
 A = np.array([[2, 5], [1, 9]])
