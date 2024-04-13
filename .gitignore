@@ -3,3 +3,5 @@ build
 dist
 .venv
 .env
+test
+**/__pycache__
