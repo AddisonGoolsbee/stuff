@@ -1,5 +1,6 @@
 # Multipy some hard-coded matrices. Used for a problem set in the class 3D Spacial Modeling and Computing
 import numpy as np
+import sympy as sp
 
 def problem_2():
     A = np.array([[2, 5], [1, 9]])
@@ -23,6 +24,28 @@ def problem_6():
     T2 = np.array([[0,1,3],[-1,0,4],[0,0,1]])
     print(T1 @ T2)
 
-problem_6()
+def se_log_translations():
+    # Define the symbols
+    a, b, c, q, p = sp.symbols('a1 a2 a3 q2 p2')
+
+    # Create two 3x3 matrices with symbols
+    A = sp.Matrix([
+        [0, -c, b],
+        [c, 0, -a],
+        [-b, a, 0]
+    ])
+
+    # Multiply the matrices
+    product1 = p * A * A
+    product2 = q * A
 
 
+
+    print(sp.pretty(product1))
+    print(sp.pretty(product2))
+    result = sp.eye(3) + product1 + product2
+    print(sp.pretty(result))
+    inv_result = result.inv()
+    print(sp.pretty(inv_result))
+
+se_log_translations()
