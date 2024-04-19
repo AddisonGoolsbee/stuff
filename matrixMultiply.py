@@ -39,6 +39,13 @@ def se_log_translations():
     product1 = p * A * A
     product2 = q * A
 
+    p2 = A * A
+    p3 = A * p2
+    p4 = A * p3
+
+    print(sp.pretty(p2))
+    print(sp.pretty(p3))
+    print(sp.pretty(p4))
 
 
     print(sp.pretty(product1))
