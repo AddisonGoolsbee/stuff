@@ -14,7 +14,7 @@ def sum_prices(filename):
         return None
 
 
-total = sum_prices('prices.txt')
+total = sum_prices('python/prices.txt')
 
 if total is not None:
     print(f"${total:.2f}, split 2 ways is ${total / 2:.2f} each.")
