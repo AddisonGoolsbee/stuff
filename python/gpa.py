@@ -1,6 +1,9 @@
 # Calculate my GPA
 import os
 from ast import literal_eval
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def main():
     grades_array = os.getenv('GRADES')
